@@ -1,0 +1,145 @@
+*,*:before,::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    // height: 100%;
+
+}
+.slider__item img {
+   max-width: 741px;
+   height: 490px;
+
+    // max-width: 502px;
+  
+}
+.slick-track {
+    display: flex;
+    align-items:flex-start;
+}
+.slick-list{
+    overflow: hidden;
+}
+// .slider{
+//     min-width: 0;
+// }
+.slider1 {
+  position: relative;  
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+//   padding: 0 50px;
+//   height:60px;
+}
+.slider1 .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 1;
+}
+.slider1 .slick-arrow.slick-prev{
+    left: 0;
+    // background: url('../../img/strelkz.png') 0 0 / 100% no-repeat;
+
+}
+.slider1 .slick-arrow.slick-next{
+    right: 0;
+    // background: url('../../img/lstrelka.png') 0 0 / 100% no-repeat;
+
+}
+.slider1-item{
+
+}
+.slider .slick-dots{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.slider .slick-dots li{
+  list-style: none;
+  margin: 20px 10px;
+
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(97, 76, 76);
+   border-radius: 50%;
+  
+  }
+.slider .slick-dots li.slick-active button{
+     background-color: transparent;
+     border: 1px solid $grey;
+  
+  }
+  .slider-description {
+      height: 490px;
+      background-color: #5c3249;
+    //   width: 100%;
+      display: flex;
+        // padding: 116px 170px 144px 129px; 
+      align-items:center;
+      padding: 0 100px;
+  }
+  .slider__item {
+      display: flex;
+  }
+  .slider-description p {
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: normal;
+      line-height: 32px;
+   
+      text-transform: capitalize;
+      color: rgb(245, 243, 243);
+
+
+  }
+  .slider-description span {
+    font-size: 0.75rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 0.875px;
+ display: block;
+    text-transform: uppercase;
+    color: rgb(245, 243, 243);
+    margin-top: 15px;
+
+
+}
+@media screen and (max-width: 1170px) {
+    .slider-description { 
+      padding: 0 30px;
+     
+    } 
+}
+@media screen and (max-width: 920px) {
+    .slider-description { 
+      display: none;
+       
+    } 
+    .slider__item img {
+     
+        width: 100%;
+  
+}
+  
+}
+@media (max-width: 736px) {
+    .slider__item {
+     
+        width: 100%;
+        
+        // height: 100%;
+    } 
+      
+    }
+   
